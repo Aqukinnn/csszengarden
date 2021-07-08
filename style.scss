@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Otomanopee+One&family=Shadows+Into+Light&display=swap');
+
+
+$primary_textcolor : #FFE5CC;
+$third_color : rgb(255, 255, 255);
+
+@mixin defaultStyle() {
+    text-align: center;
+    color: $third_color ;
+  
+}
+
+@mixin shadow {
+    text-shadow : 0 1px 0 #ccc,
+                     0 2px 0 #c9c9c9,
+                     0 3px 0 #bbb,
+                     0 4px 0 #b9b9b9,
+                     0 5px 0 #aaa,
+                     0 6px 1px rgba(0,0,0,.1),
+                     0 0 5px rgba(0,0,0,.1),
+                     0 1px 3px rgba(0,0,0,.3),
+                     0 3px 5px rgba(0,0,0,.2),
+                     0 5px 10px rgba(0,0,0,.25),
+                     0 10px 10px rgba(0,0,0,.2),
+                     0 20px 20px rgba(0,0,0,.15);
+}
+    
+@mixin borderSet($bgm, $img_bgm) {
+    background-size: cover;
+    background-color: $bgm;
+    background-image: url($img_bgm);
+    top: 0;
+    left: 0;
+    border: 0px solid $bgm;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 7%;
+    box-sizing: border-box;
+    
+}
+@mixin font($size) {
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: $size;
+    
+}
+
+
+#zen-intro {
+    @include defaultStyle();
+    @include borderSet(rgb(77, 154, 206),"/img/wall2.jpg");
+    a{
+        color: $third_color;
+    }
+  }
+
+body{
+    background-color: $third_color;
+    width: 100%;
+    height: 2000px;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    @include font(100px);
+    @include shadow();
+}
+
+h2 {
+    @include font(40px);
+    @include shadow();
+}
+
+h3 {
+    @include font(40px);
+    @include shadow();
+}
+p{
+    @include font(20px);
+}
