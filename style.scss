@@ -48,17 +48,17 @@ $third_color : rgb(255, 255, 255);
 
 .intro {
     @include defaultStyle($third_color,center);
-    @include borderSet("/img/wall2.jpg",7%);
+    @include borderSet("./img/wall2.jpg",7%);
   }
 
 #zen-supporting{
     @include defaultStyle($third_color,left);
-    @include borderSet("/img/end3.png",7%);
+    @include borderSet("./img/end3.png",7%);
   }
 
 .sidebar{
     color: $third_color ;
-    @include borderSet("/img/end2.jfif",0.5%);
+    @include borderSet("./img/end2.jfif",0.5%);
 }
 
 body{
