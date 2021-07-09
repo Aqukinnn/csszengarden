@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Otomanopee+One&family=Shadows+Into+Light&display=swap');
 
 
-$primary_textcolor : #FFE5CC;
+$primary_textcolor : #f7be89;
 $third_color : rgb(255, 255, 255);
 
 @mixin defaultStyle() {
@@ -26,13 +26,12 @@ $third_color : rgb(255, 255, 255);
                      0 20px 20px rgba(0,0,0,.15);
 }
     
-@mixin borderSet($bgm, $img_bgm) {
+@mixin borderSet($img_bgm) {
     background-size: cover;
-    background-color: $bgm;
     background-image: url($img_bgm);
     top: 0;
     left: 0;
-    border: 0px solid $bgm;
+    border: 0px solid;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -49,9 +48,12 @@ $third_color : rgb(255, 255, 255);
 
 #zen-intro {
     @include defaultStyle();
-    @include borderSet(rgb(77, 154, 206),"/img/wall2.jpg");
-    a{
+    @include borderSet("https://pbs.twimg.com/media/E5SfRFaXoAUJHKP?format=jpg&name=4096x4096");
+    a:link{
         color: $third_color;
+    }
+    a:hover{
+        color:black;
     }
   }
 
