@@ -3,7 +3,7 @@
 .intro {
   text-align: center;
   color: white;
-  background-image: url("/img/wall2.jpg");
+  background-image: url("./img/wall2.jpg");
   background-size: cover;
   top: 0;
   left: 0;
@@ -19,7 +19,7 @@
 #zen-supporting {
   text-align: left;
   color: white;
-  background-image: url("/img/end3.png");
+  background-image: url("./img/end3.png");
   background-size: cover;
   top: 0;
   left: 0;
@@ -34,7 +34,7 @@
 
 .sidebar {
   color: white;
-  background-image: url("/img/end2.jfif");
+  background-image: url("./img/end2.jfif");
   background-size: cover;
   top: 0;
   left: 0;
